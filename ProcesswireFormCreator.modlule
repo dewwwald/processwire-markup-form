@@ -1,0 +1,22 @@
+<?php
+
+define('MODULE_DIR', dirname(__FILE__) . '/');
+
+include_once MODULE_DIR.'lib/form.php';
+
+class ProcesswireFormCreator extends WireData implements Module {
+  public static function getModuleInfo() {
+    return array(
+      'title' => 'Processwire Form Creator',
+      'summary' => 'An interface that uses processwire forms to create forms exactly the way you want it to.',
+      'version' => 0.1
+    );
+  }
+
+  public function init() {
+    // initialize your module, setup hooks, or leave blank if you don't need it
+    // but this init() function must be present.
+  }
+
+  public function render () {}
+}
